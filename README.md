@@ -29,7 +29,7 @@ i)Image Translation
 import numpy as np
 import cv2
 import matplotlib.pyplot as plt
-inputImage=cv2.imread("gray.jpg")
+inputImage=cv2.imread("huski.jpg")
 inputImage=cv2.cvtColor(inputImage, cv2.COLOR_BGR2RGB)
 plt.axis("off")
 plt.imshow(inputImage)
@@ -47,7 +47,7 @@ ii) Image Scaling
 import numpy as np
 import cv2
 import matplotlib.pyplot as plt
-inputImage=cv2.imread("gray.jpg")
+inputImage=cv2.imread("car.jpg")
 inputImage=cv2.cvtColor(inputImage, cv2.COLOR_BGR2RGB)
 plt.axis("off")
 plt.imshow(inputImage)
@@ -66,7 +66,7 @@ iii)Image shearing
 import numpy as np
 import cv2
 import matplotlib.pyplot as plt
-inputImage=cv2.imread("gray.jpg")
+inputImage=cv2.imread("car.jpg")
 inputImage=cv2.cvtColor(inputImage, cv2.COLOR_BGR2RGB)
 plt.axis("off")
 plt.imshow(inputImage)
@@ -92,7 +92,7 @@ iv)Image Reflection
 import numpy as np
 import cv2
 import matplotlib.pyplot as plt
-inputImage=cv2.imread("gray.jpg")
+inputImage=cv2.imread("ducati.jpg")
 inputImage=cv2.cvtColor(inputImage, cv2.COLOR_BGR2RGB)
 plt.axis("off")
 plt.imshow(inputImage)
@@ -117,7 +117,7 @@ import numpy as np
 import cv2
 import matplotlib.pyplot as plt
 angle=np.radians(45)
-inputImage=cv2.imread("gray.jpg")
+inputImage=cv2.imread("ducati.jpg")
 M=np.float32([[np.cos(angle),-(np.sin(angle)),0],
                [np.sin(angle),np.cos(angle),0],
                [0,0,1]])
@@ -135,7 +135,7 @@ import numpy as np
 import cv2
 import matplotlib.pyplot as plt
 angle=np.radians(45)
-inputImage=cv2.imread("gray.jpg")
+inputImage=cv2.imread("huski.jpg")
 CroppedImage= inputImage[20:150, 60:230]
 plt.axis('off')
 plt.imshow(CroppedImage)
@@ -143,47 +143,30 @@ plt.show()
 ```
 ## Output:
 ### i)Image Translation
-![github.logo](nature.png)
+![github.logo](h.png)
+![github.logo](h1.png)
 
 ### ii) Image Scaling
-<br>
-<br>
-<br>
-<br>
+![github.logo](c.png)
+![github.logo](c1.png)
 
 
 ### iii)Image shearing
-<br>
-<br>
-<br>
-<br>
+![github.logo](cg.png)
+![github.logo](cg1.png)
+![github.logo](cg2.png)
 
 
 ### iv)Image Reflection
-<br>
-<br>
-<br>
-<br>
-
-
+![github.logo](d1.png)
+![github.logo](d2.png)
 
 ### v)Image Rotation
-<br>
-<br>
-<br>
-<br>
-
+![github.logo](du1.png)
 
 
 ### vi)Image Cropping
-<br>
-<br>
-<br>
-<br>
-
-
-
-
+![github.logo](hu1.png)
 ## Result: 
 
 Thus the different image transformations such as Translation, Scaling, Shearing, Reflection, Rotation and Cropping are done using OpenCV and python programming.
